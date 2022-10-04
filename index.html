@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script defer src="fontawesome/js/all.js"></script>
-    <title>John Doe</title>
+    <title>Tony Liu</title>
     <style>
+        @import url('http://fonts.cdnfonts.com/css/chams');
         html,
         body {
             height: 100%;
-            font-family: 'Merriweather Sans', sans-serif;
+            font-family: 'Chams','Merriweather Sans', sans-serif;
             scroll-behavior: smooth;
         }
 
@@ -77,62 +78,116 @@
         .next a {
             color: rgb(33, 37, 41);
         }
+
+        #coverbg {
+            background-image: url("images/fishes.png");
+        }
     </style>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#landing">John Doe<span class="sr-only">(current)</span></a>
+<body class=" bg-gradient bg-dark  text-info">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <a class="navbar-brand" href="#landing">Tony Liu<span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link text-light" href="#aboutme">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#courses">Courses</a>
+                    <a class="nav-link text-light" href="#blendergallery">Blender</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link text-light" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" id="coverbg">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">Cover</h3>
+               
+            </div>
+        </header>
+
+        <main role="main" class="inner cover text-center bg-dark">
+            <h1 class="cover-heading">Welcome to My Page</h1>
+            <p class="lead">Thanks for clicking! Scroll down to look more or click the button...</p>
+            <p class="lead">
+                <a href="#landing" class="btn btn-lg btn-secondary">Learn more</a>
+            </p>
+        </main>
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p hidden>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+        </footer>
+    </div>
+
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm John!</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center border-bottom border-top border-warning">Hi, I am Tony!</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I'm an Information Science & Technology Student at Temple
-                University.</h5>
+            <h5 class="display-5 mx-auto faded text-center">
+                I'm an Information Science & Technology Student at Temple
+                University.
+            </h5>
         </div>
         <div class="row my-4">
-            <div class="col my-3"><img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Python" /></div>
-            <div class="col my-3"><img src="images/angular.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Angular" /></div>
-            <div class="col my-3"><img src="images/typescript.jpg" class="lang" data-toggle="tooltip"
-                    data-placement="top" title="TypeScript" /></div>
+            <div class="col my-3">
+                <img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Python" />
+            </div>
+            <div class="col my-3">
+                <img src="images/angular.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Angular" />
+            </div>
 
-            <div class="col my-3"><img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="C#" /></div>
-            <div class="col my-3"><img src="images/node.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Node.js" /></div>
-            <div class="col my-3"><img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Java" /></div>
 
-            <div class="col my-3"><img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="ASP.NET" /></div>           
-                     <div class="col my-3"><img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Microsoft SQL Server" /></div> <div class="col my-3"><img src="images/mongodb.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="MongoDB" /></div>
+            <div class="col my-3">
+                <img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="C#" />
+            </div>
+
+            <div class="col my-3">
+                <img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Java" />
+            </div>
+
+            <div class="col my-3">
+                <img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="ASP.NET" />
+            </div>
+            <div class="col my-3">
+                <img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Microsoft SQL Server" />
+            </div>
+
 
         </div>
         <div class="row my-4">
+            <div class="col">
+                <!-- Add Aboutme href -->
+                <a href="#aboutme"><button type="button" class="btn btn-outline">About Me</button></a>
+            </div>
+            <div class="col">
+                <!-- Add Blender href -->
+                <a href="#blendergallery"><button type="button" class="btn btn-outline">Blender Creations!</button></a>
+            </div>
             <div class="col">
                 <a href="#projects"><button type="button" class="btn btn-outline">Projects</button></a>
             </div>
@@ -144,123 +199,321 @@
             </div>
         </div>
         <div class="row mt-5 next">
-            <a href="#projects" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Projects"></i></a> </div>
+            <a href="#aboutme" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="About Me"></i>
+            </a>
+        </div>
 
     </div>
-    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="aboutme">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Projects</h4>
-        </div>
-        <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
-        </div>
-        <div class="row w-100">
-            <h5>Inspiro for Esperanza</h5>
-        </div>
-        <div class="row w-100 mb-4">
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi
-                in neque blandit auctor. Vestibulum pellentesque fringilla nulla quis sagittis. Donec id erat
-                sodales, fringilla est non, vestibulum tellus. Suspendisse potenti. Fusce et dolor blandit,
-                tincidunt eros non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus tincidunt
-                purus. Suspendisse imperdiet massa nec sem dictum luctus. Vestibulum at porta lectus, sed
-                faucibus libero. </p>
-        </div>
-        <div class="row w-100">
-            <h5>Work From Home Pinterest</h5>
-        </div>
-        <div class="row w-100 mb-4">
-            <p class="text-justify">Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
-                finibus. Nulla facilisi. Integer eu libero lorem. Pellentesque eget pretium ligula. Donec finibus nibh
-                sed leo dapibus imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit dolor, ac mollis
-                risus. Vestibulum commodo turpis nulla, bibendum varius urna dictum porta. </p>
-        </div>
-        <div class="row w-100">
-            <h5>Query Dating Site</h5>
-        </div>
-        <div class="row w-100">
-            <p class="text-justify">Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra odio ut
-                egestas. Nullam facilisis condimentum consequat. Integer arcu nibh, ullamcorper non fringilla quis,
-                tempus sit amet turpis. Proin ac gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor sit
-                amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a maximus vel, fringilla eu nisl.
-                Pellentesque sed quam non urna dapibus porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-                efficitur at. </p>
-        </div>
-        <div class="row mt-5 next">
-            <a href="#courses" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Courses"></i></a> </div>
-    </div>
-    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
-        <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Courses</h4>
-        </div>
-        <div class="row mx-auto mb-4">
-            <h5 class="display-5 mx-auto faded text-center">Not as tasty as a main course, but close.</h5>
-        </div>
-        <div class="row w-100 justify-content-center my-3">
-            <div class="col text-center course">
-                <h5>Information Systems Analysis and Design</h5>
-            </div>
-            <div class="col text-center course">
-                <h5>Server-Side Web Application Development</h5>
-            </div>
-        </div>
-        <div class="row w-100 justify-content-center my-3">
-            <div class="col text-center course">
-                <h5>Network Architectures</h5>
-            </div>
-            <div class="col text-center course">
-                <h5>Client-Side Scripting</h5>
-            </div>
-        </div>
-        <div class="row w-100 justify-content-center my-3">
-            <div class="col text-center course">
-                <h5>Component-Based Software Design</h5>
-            </div>
-            <div class="col text-center course">
-                <h5>Database Management Systems</h5>
-            </div>
-        </div>
-        <div class="row mt-5 next">
-            <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Contact"></i></a> </div>
-    </div>
-    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
-        <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center border-bottom border-top border-warning ">About Me</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I don't bite.</h5>
-        </div>
-        <div class="row my-4 contacticon">
-            <a href="mailto:johndoe@gmail.com" class="col mx-3"><i class="fas fa-envelope-square"
-                    data-toggle="tooltip" data-placement="top" title="Email"></i></a>
-            <a href="https://www.linkedin.com/in/johndoe/" class="col mx-3"><i class="fab fa-linkedin"
-                    data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
-            <a href="https://github.com/johndoe" class="col mx-3"><i class="fab fa-github-square"
-                    data-toggle="tooltip" data-placement="top" title="Github"></i></a>
+            <h5 class="display-5 mx-auto faded text-center mb-4">i am maybe a cool guy??? </h5>
 
         </div>
-        <div class="row mt-5">
-            <a href="#landing"><button type="button" class="btn btn-outline">Return to Top</button></a>
+        <div class="row w-100">
+            <h5>I like playing games </h5>
         </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                I'm a huge fan of cooperative and singleplayer games. Multiplayer competitive games make me too toxic as a person so I try not to play as much of those (Plus I'm bad at them).
+                Some of my favorite games off the top of my head are Monster Hunter: World, Kenshi, Nuclear Throne, Cook Serve Delicious 3, Bloons Tower Defense 6, Project Zomboid and Dark Souls.
+                They're pretty baller games that I think you should check out :-o
+            </p>
+        </div>
+        <div class="row w-100">
+            <h5>I love to cook!</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                I cook almost every day, and I really like dicing ingredients up with sharp knives! I also sometimes cook for my friends whenever they ask. I think I'm pretty good at making macaroni and cheese, chicken parmesan, fried chicken, shepherds pie, and many stir fry dishes.
+                I think everyone should learn to cook!
+            </p>
+        </div>
+        <div class="row w-100">
+            <h5>I do art too!</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                There's a gallery on this page somewhere, but I really like drawing and doing 3d art using the free program Blender. It's super refreshing to have a hobby that isn't just playing games, and I find it very satisfying when I pull off a satisfying project.
+                I would say I'm pretty bad at it but oh well I like doing it anyways, maybe one day I'll get super good and make like a million cool things. Here is a video below on Blender tutorial
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nIoXOplUvAw" allowfullscreen></iframe>
+                </div>
+            </p>
+        </div>
+        <div class="row mt-5 next">
+            <a href="#blendergallery" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Blender"></i>
+            </a>
+        </div>
+
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="blendergallery">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center border-bottom border-top border-warning ">My Blender Pictures!</h4>
+        </div>
+        <div class="row mx-auto">
+            <h5 class="display-5 mx-auto faded text-center mb-4">I've been on and off blender for years and yet I feel like my skills are only slowly getting better..</h5>
+        </div>
+        <!-- Got rid of this because it wasn't neat
+        <img src="images/tonyps1.png" class="img-fluid float-left" alt="Responsive image">
+        <img src="images/robot.png" class="img-fluid float-right" alt="Responsive image">
+        <img src="images/donut.png" class="rounded float-left" alt="...">
+        <img src="images/unknown.png" class="img-fluid" alt="Responsive image">
+        <img src="images/tonyfishversion4.png" alt="..." class="img-thumbnail">
+        <img src="images/swordman4.png" alt="..." class="img-thumbnail">
+        <img src="images/swordman5.png" alt="..." class="img-thumbnail">
+        <div class="row w-100">
+            <h5>I do art too!</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                There's a gallery on this page somewhere, but I really like drawing and doing 3d art using the free program Blender. It's super refreshing to have a hobby that isn't just playing games, and I find it very satisfying when I pull off a satisfying project.
+                I would say I'm pretty bad at it but oh well I like doing it anyways, maybe one day I'll get super good and make like a million cool things.
+            </p>
+        </div>
+    -->
+        <!--Bootstrap Album -->
+        <div class="album py-5 bg-dark">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="images/tonyps1.png" alt="Card image capeeee">
+                            <div class="card-body">
+                                <p class="card-text">This is a suited man I made to have a ps1-style graphics.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="images/robot.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">This is a robot that is holding 2 weapons going guns blazing. I liked making the robot tentacle-like arms</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="images/donut.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">My first Blender project, much like 95% of other Blender starters. Thanks BlenderGuru! </p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="images/unknown.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">This was my attempt at trying to make something spooky, and was also something I wanted to use the sculpture tool for (The head was done using sculpting tool, but everything else was done with regular object geometry building</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="images/tonyfishversion4.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">I don't really know what this is but it's my favorite creation. I made this one time when I was on Skype with friends at 5 in the morning and was sleep-deprived.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="images/swordman4.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">I wanted to make a cool silohuette type of art with a samurai guy. The model was taken from the ps1-style character which is why he looks blocky.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="images/swordman5.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">This is an alternate variant of the previous image..</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="images/firstgun.png" alt="Card image capeeee">
+                            <div class="card-body">
+                                <p class="card-text">This was my first attempt at making a gun on blender. The shape geometry sucks but I like the color palette at least</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="images/secondgun.png" alt="Card image capeeee">
+                            <div class="card-body">
+                                <p class="card-text">This was my second attempt using references from google images. This is what happens when you research vs the previous image where you don't research images lol</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="row mt-5 next">
+            <a href="#projects" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Projects"></i>
+            </a>
+        </div>
+        <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
+            <div class="row mx-auto">
+                <h4 class="display-4 font-weight-bold mx-auto text-center border-bottom border-top border-warning">Projects</h4>
+            </div>
+            <div class="row mx-auto">
+                <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
+            </div>
+            <div class="row w-100">
+                <h5>Capstone 1 Project - Financial Business Continuity Planning (FBCP)</h5>
+            </div>
+            <div class="row w-100 mb-4">
+                <p class="text-justify">
+                    Current project for Capstone 1 which is about creating a new system for the Director of Strategic Media that will allow department representatives to submit their annual continuity plans
+                </p>
+            </div>
+            <div class="row w-100">
+                <h5>Backbone Food Recipe Project</h5>
+            </div>
+            <div class="row w-100 mb-4">
+                <p class="text-justify">
+                    I made this website for class using a chosen framework. I did Backbone. This was a 2-person project but unfortunately I had to do everything. Allows modification, update, deletion and creation of recipes.
+                    <a href="http://cis-iis2.temple.edu/Spring2022/CIS3344_tuj56296/TermProject.html" target="_blank">Here's the link!</a>
+                </p>
+            </div>
+
+            <div class="row mt-5 next">
+                <a href="#courses" class="col">
+                    <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                       title="Courses"></i>
+                </a>
+            </div>
+        </div>
+        <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
+            <div class="row mx-auto">
+                <h4 class="display-4 font-weight-bold mx-auto text-center border-bottom border-top border-warning">Courses</h4>
+            </div>
+            <div class="row mx-auto mb-4">
+                <h5 class="display-5 mx-auto faded text-center">Not as tasty as a main course, but close.</h5>
+            </div>
+            <div class="row w-100 justify-content-center my-3">
+                <div class="col text-center course">
+                    <h5>Information Systems Analysis and Design</h5>
+                </div>
+                <div class="col text-center course">
+                    <h5>Server-Side Web Application Development</h5>
+                </div>
+            </div>
+            <div class="row w-100 justify-content-center my-3">
+                <div class="col text-center course">
+                    <h5>Network Architectures</h5>
+                </div>
+                <div class="col text-center course">
+                    <h5>Client-Side Scripting</h5>
+                </div>
+            </div>
+            <div class="row w-100 justify-content-center my-3">
+                <div class="col text-center course">
+                    <h5>Component-Based Software Design</h5>
+                </div>
+                <div class="col text-center course">
+                    <h5>Database Management Systems</h5>
+                </div>
+            </div>
+            <div class="row mt-5 next">
+                <a href="#contact" class="col">
+                    <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                       title="Contact"></i>
+                </a>
+            </div>
+        </div>
+        <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
+            <div class="row mx-auto">
+                <h4 class="display-4 font-weight-bold mx-auto text-center border-bottom border-top border-warning">Feel Like Reaching Out?</h4>
+            </div>
+            <div class="row mx-auto">
+                <h5 class="display-5 mx-auto faded text-center">i will accept you i swear!!</h5>
+            </div>
+            <div class="row my-4 contacticon">
+                <a href="mailto:tonyfrosturd@gmail.com" class="col mx-3">
+                    <i class="fas fa-envelope-square"
+                       data-toggle="tooltip" data-placement="top" title="Email"></i>
+                </a>
+                <a href="https://www.youtube.com/" class="col mx-3">
+                    <i class="fab fa-linkedin"
+                       data-toggle="tooltip" data-placement="top" title="LinkedIn"></i>
+                </a>
+                <a href="https://github.com/tomatotony" class="col mx-3">
+                    <i class="fab fa-github-square"
+                       data-toggle="tooltip" data-placement="top" title="Github"></i>
+                </a>
+
+            </div>
+            <div class="row mt-5">
+                <a href="#landing"><button type="button" class="btn btn-outline">Return to Top</button></a>
+            </div>
+        </div>
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>Tonys Site made using HTML and <a href="https://getbootstrap.com/">Bootstrap</a>.</p>
+            </div>
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
 </body>
 
 </html>
